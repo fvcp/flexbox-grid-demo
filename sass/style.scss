@@ -1,0 +1,83 @@
+// @import 'toolkit/reset';
+@import 'toolkit';
+
+.flexible-video {
+  @include ir;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+}
+
+.header {
+  background: wheat;
+}
+.main {
+  background-color: darkkhaki;
+}
+.sidebar {
+  background-color: gainsboro;
+}
+.footer {
+  background-color: darkseagreen;
+}
+
+.panel {
+  padding: .5em;
+}
+
+.wrapper--GRID {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header"
+    "content"
+    "sidebar"
+    "footer";
+
+  .header {
+    grid-area: header;
+  }
+  .main {
+    grid-area: content;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+
+@media (min-width: 550px) {
+  .wrapper--GRID {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+  }
+}
+
+.wrapper--FLEX {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  .flex-2 {
+    display: flex;
+
+    .sidebar {
+      flex: 1;
+    }
+
+    .main {
+      flex: 3;
+    }
+  }
+}
