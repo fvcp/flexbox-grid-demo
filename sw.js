@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/css/style.css","56ab1cdc480fec15c786bc5a792feb43"],["/flexbox-grid/index.html","192d59379281ed0666a755dc3dd26dee"],["/flexbox/index.html","b5288260dc7ffbff019f933da828edef"],["/grid/index.html","6b0290979c987f4728486a622f87ea07"],["/index.html","5144eb38d66ab57b4ac924ca24eeb543"],["/js/main.js","fcc24b208e95bcfab3b7d5da59f33f61"]];
+var precacheConfig = [["/css/style.css","56ab1cdc480fec15c786bc5a792feb43"],["/flexbox-grid/index.html","192d59379281ed0666a755dc3dd26dee"],["/flexbox/index.html","325889497cd7f23e78290c34ffc8821d"],["/grid/index.html","6b0290979c987f4728486a622f87ea07"],["/index.html","840cd67815d0ab616a1349d7f1eeb3ff"],["/js/main.js","fcc24b208e95bcfab3b7d5da59f33f61"]];
 var cacheName = 'sw-precache-v2--' + (self.registration ? self.registration.scope : '');
 
 
