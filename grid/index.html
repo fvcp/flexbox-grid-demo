@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Grid | Grid &amp; Flexbox Demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body class="wrapper--GRID">
-  <header class="header panel">
-    <h1>Grid</h1>
-    <time datetime="2017-04-12">12 April 2017</time>
-  </header>
-
-  <aside class="sidebar panel">
-    <ol>
-      <li><a href="/">Introduction</a></li>
-      <li><a href="/flexbox-grid">Flexbox & Grid</a></li>
-      <li><a href="/flexbox">Flexbox</a></li>
-      <li><a href="/grid">Grid</a></li>
-    </ol>
-  </aside>
-
-  <main class="main panel">
-    <blockquote>
-<p>CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page area or small user interface elements.</p>
-<p>— <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#The_fr_Unit" title="Basic concepts of grid layout - CSS | MDN">MDN</a></p>
-</blockquote>
-<h2>What the “fr”?</h2>
-<p>The new <code>fr</code> unit is a “fraction of the available space in the grid container”.</p>
-<h2>Parent Container</h2>
-<pre ><code >.parent {
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Grid | Grid &amp; Flexbox Demo</title><meta name="viewport" content="width=device-width,initial-scale=1"><style type="text/css">*{box-sizing:border-box}body{font-size:24px}.header{background:wheat}.main{background-color:#bdb76b}.sidebar{background-color:#dcdcdc}.panel{padding:.5em}.wrapper--GRID{display:-ms-grid;display:grid;grid-gap:20px;grid-template-areas:header content sidebar footer}.wrapper--GRID .header{grid-area:header}.wrapper--GRID .main{grid-area:content}.wrapper--GRID .sidebar{grid-area:sidebar}@media (min-width:550px){.wrapper--GRID{-ms-grid-columns:1fr 2fr;grid-template-columns:1fr 2fr;grid-template-areas:"header header" "sidebar content" "footer footer"}}</style><link rel="preload" href="/css/style.css" as="style" onload="this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/style.css"></noscript><script>!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script></head><body class="wrapper--GRID"><header class="header panel"><h1>Grid</h1><time datetime="2017-04-12">12 April 2017</time></header><aside class="sidebar panel"><ol><li><a href="/">Introduction</a></li><li><a href="/flexbox-grid">Flexbox & Grid</a></li><li><a href="/flexbox">Flexbox</a></li><li><a href="/grid">Grid</a></li></ol></aside><main class="main panel"><blockquote><p>CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page area or small user interface elements.</p><p>— <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#The_fr_Unit" title="Basic concepts of grid layout - CSS | MDN">MDN</a></p></blockquote><h2>What the “fr”?</h2><p>The new <code>fr</code> unit is a “fraction of the available space in the grid container”.</p><h2>Parent Container</h2><pre><code>.parent {
     // Define the container as a grid. Establish grid context for children
     display: grid;
 
@@ -52,9 +21,7 @@
     // Align items along column axis
     align-items:
 }
-</code></pre>
-<h2>Child Item</h2>
-<pre ><code >.child {
+</code></pre><h2>Child Item</h2><pre><code>.child {
     // Dictate the grid item location
     grid-column {
         grid-column-start: line span
@@ -75,14 +42,4 @@
     // Align content along column axis
     align-self:
 }
-</code></pre>
-
-  </main>
-
-  <footer class="footer panel">
-    <p>There are many things that a computer can do.</p>
-  </footer>
-
-  <script src="/js/main.js" defer></script>
-</body>
-</html>
+</code></pre></main><footer class="footer panel"><p>There are many things that a computer can do.</p></footer><script src="/js/main.js" defer="defer"></script></body></html>
