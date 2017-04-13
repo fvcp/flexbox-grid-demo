@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid | Grid &amp; Flexbox Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="wrapper--GRID">
+  <header class="header panel">
+    <h1>Grid</h1>
+    <time datetime="2017-04-12">12 April 2017</time>
+  </header>
+
+  <aside class="sidebar panel">
+    <ol>
+      <li><a href="/">Introduction</a></li>
+      <li><a href="/flexbox-grid">Flexbox & Grid</a></li>
+      <li><a href="/flexbox">Flexbox</a></li>
+      <li><a href="/grid">Grid</a></li>
+    </ol>
+  </aside>
+
+  <main class="main panel">
+    <blockquote>
+<p>CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page area or small user interface elements.</p>
+<p>— <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#The_fr_Unit" title="Basic concepts of grid layout - CSS | MDN">MDN</a></p>
+</blockquote>
+<h2>What the “fr”?</h2>
+<p>The new <code>fr</code> unit is a “fraction of the available space in the grid container”.</p>
+<h2>Parent Container</h2>
+<pre ><code >.parent {
+    // Define the container as a grid. Establish grid context for children
+    display: grid;
+
+    // Establish grid
+    grid-template {
+        grid-template-rows:
+        grid-template-columns:
+        grid-template-areas:
+    }
+
+    // Set the grid gap (gutter) between grid elements (NOT AROUND THE GRID)
+    grid-gap {
+        grid-column-gap:
+        grid-row-gap:
+    }
+
+    // Align items along row axis
+    justify-items:
+
+    // Align items along column axis
+    align-items:
+}
+</code></pre>
+<h2>Child Item</h2>
+<pre ><code >.child {
+    // Dictate the grid item location
+    grid-column {
+        grid-column-start: line span
+        grid-column-end:
+    }
+
+    grid-row {
+        grid-row-start: row span
+        grid-row-end:
+    }
+
+    // Specify a named grid template area
+    grid-area: name
+    
+    // Align content along row axis
+    justify-self:
+
+    // Align content along column axis
+    align-self:
+}
+</code></pre>
+
+  </main>
+
+  <footer class="footer panel">
+    <p>There are many things that a computer can do.</p>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
